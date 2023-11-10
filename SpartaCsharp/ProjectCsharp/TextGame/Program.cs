@@ -28,9 +28,12 @@ namespace TextGame
 
             Character _player = new Character(name, "전사", 1, 10, 5, 100, 1500);
             _consoleText.StartTxt();
-            EquipmentA[] equipment = new EquipmentA[2];
-            equipment[0] = new EquipmentA("갑옷", 0 ,100, 10,true);
-            equipment[1] = new EquipmentA("투구", 0, 50, 5,false);
+            // 배열부분 LIST로 변경할 생각.
+            EquipmentA[] equipment = new EquipmentA[4];
+            equipment[0] = new EquipmentA("무쇠갑옷", 0 ,100, 10,true);
+            equipment[1] = new EquipmentA("쇠 투구", 0, 70, 7, false);
+            equipment[2] = new EquipmentA("낡은 검", 2, 0, 0, true);
+            equipment[3] = new EquipmentA("쇠 검", 13, 0, 0, false);
             Inventory inventory = new Inventory(equipment);
             while (_gamgeEnd == false)
             {
@@ -119,14 +122,17 @@ namespace TextGame
         }
         public void GoDungeonTxt()
         {
-            Console.WriteLine("======== 던전에 가기 전 준비를 해주세요. =========");
+           
+            Console.WriteLine("==================================================");
             Console.WriteLine("  ┏   ┓             ◆");
             Console.WriteLine(" |      |          └┼┐ ");
             Console.WriteLine("|        |         ┌│  ");
-            Console.WriteLine("==================================================  \n\n");
-            Console.WriteLine("1. 상태보기 ");
-            Console.WriteLine("2. 인벤토리 ");
-            Console.WriteLine("=========== ");
+            Console.WriteLine("==================================================");
+            Console.WriteLine("======== 던전에 가기 전 준비를 해주세요. =========\n\n");
+            Console.WriteLine("===============");
+            Console.WriteLine("= 1. 상태보기 =");
+            Console.WriteLine("= 2. 인벤토리 =");
+            Console.WriteLine("===============");
 
         }
 
@@ -161,21 +167,34 @@ namespace TextGame
 
         public void PlayerStat(EquipmentA[] equip)
         {
-            int[] eqiopstats = new int[3];
+            int[] eqiopStats = new int[7];
+            String[] eqiopName = new String[7] { " (미착용) ", " (미착용) ", " (미착용) ", " (미착용) ", " (미착용) ", " (미착용)", "(미착용) "};
             for (int i = 0; i < equip.Length; i++)
             {
-                eqiopstats[0] += equip[i].ATK;
-                eqiopstats[1] += equip[i].DEF;
-                eqiopstats[2] += equip[i].Health;
+                
+                if (equip[i].Isequip ==true)
+                {
+                    eqiopName[i] = equip[i].Name;
+                    eqiopStats[0] += equip[i].ATK;
+                    eqiopStats[1] += equip[i].DEF;
+                    eqiopStats[2] += equip[i].Health;
+                }
             }
-            var table = new ConsoleTable($"{Name}", $"({Class})", " "," ");
-            table.AddRow(" 스텟 ", " 기본스텟 ", "장비스텟 ", "총스텟")
-                 .AddRow($"공격력", $"{ATK}",$" ({eqiopstats[0]})", $"{ATK}")
-                 .AddRow($"방어력", $"{DEF}", $" ({eqiopstats[1]})", $"{DEF})
-                 .AddRow($"체  력", $"{Health}", $" ({eqiopstats[2]})", $"{Health})
-                 .AddRow($"골  드", $"{Gold}" , " G");
+            var table = new ConsoleTable($" ", $" {Name} ", $" {Class} ", "  ");
+            table.AddRow(" 스텟 ", " 기본스텟 ", " 장비스텟 ", " 총스텟 ")
+                 .AddRow($" 공격력 ", $"{ATK}" , $" ({eqiopStats[0]}) ", $" {ATK + eqiopStats[0]} ")
+                 .AddRow($" 방어력 ", $"{DEF}", $" ({eqiopStats[1]}) ", $" {DEF + eqiopStats[1]} ")
+                 .AddRow($" 체  력 ", $"{Health}", $" ({eqiopStats[2]}) ", $" {Health + eqiopStats[2]} ")
+                 .AddRow($"", $" ", $" ", $" ")
+                 .AddRow($" 장비 ", $" {eqiopName[0]} ", $" {eqiopName[1]} ", $" {eqiopName[2]} ")
+                 .AddRow($" {eqiopName[3]} ", $" {eqiopName[4]} " , $" {eqiopName[5]} ", $" {eqiopName[6]} ")
+                 .AddRow($"", $" ", $" ", $" ")
+                 .AddRow($" 소지금 ", $" 골드(G) ", $" ", $" ")
+                 .AddRow($"   ", $" {Gold} G ", "","");
             table.Write();
-            Console.WriteLine("1. 나가기");
+            Console.WriteLine("=============");
+            Console.WriteLine("= 1. 나가기 =");
+            Console.WriteLine("=============");
         }
     }
     public class Weapons
@@ -213,10 +232,10 @@ namespace TextGame
     public class Inventory
     {
 
-        public string[] Name = new string[2];
-        public int[] Health = new int[2];
-        public int[] DEF = new int[2];
-        public int[] ATK = new int[2];
+        public string[] Name = new string[4];
+        public int[] Health = new int[4];
+        public int[] DEF = new int[4];
+        public int[] ATK = new int[4];
 
         public Inventory(EquipmentA[] equip) { 
 
@@ -230,37 +249,45 @@ namespace TextGame
         }
         public void InventoryTxt()
         {
-            var table = new ConsoleTable(" 이름 ", " 공격력", "체력", "방어력");
+            var table = new ConsoleTable(" 이름 ", " 공격력 ", " 체력 ", " 방어력 ");
             for (int i = 0; i < Name.Length; i++)
             {
                 table.AddRow($"{Name[i]}", $"{ATK[i]}", $"{Health[i]}", $"{DEF[i]}");
             }
             table.Write();
 
-            Console.WriteLine("1. 장착관리");
-            Console.WriteLine("2. 나가기");
+            Console.WriteLine("===============");
+            Console.WriteLine("= 1. 장착관리 =");
+            Console.WriteLine("= 2. 나가기   =");
+            Console.WriteLine("===============");
         }
         public void InventoryEquip(EquipmentA[] equip)
         {
             string checkE = "";
-            var table = new ConsoleTable(" 이름 ", " 공격력", "체력", "방어력");
+            var table = new ConsoleTable(" 장비번호 ", " 이름 ", " 공격력 ", " 체력 ", " 방어력 ");
             for (int i = 0; i < Name.Length; i++)
             {
                 string Ename = equip[i].Name;
-                checkE = Ename.Substring(Ename.Length-1);
+                checkE = Ename.Substring(Ename.Length-2);
                 if (equip[i].Isequip == true && checkE != "E")
                 {
-                    Ename = Ename + " E";
+                    Ename = Ename + " [E]";
+                    Console.ForegroundColor = ConsoleColor.Blue;
                 }
                 else if (equip[i].Isequip == false && checkE == "E") 
                 {
-                    Ename = Ename.Substring(0, Ename.Length - 2);
+                    Ename = Ename.Substring(0, Ename.Length - 4);
                 }
-                table.AddRow($"{Ename}", $"{equip[i].ATK}", $"{equip[i].Health}", $"{equip[i].DEF}");
+                table.AddRow($" {i+1} ",$" {Ename} ", $"{equip[i].ATK}", $"{equip[i].Health}", $"{equip[i].DEF}");
+                Console.ResetColor();
             }
             table.Write();
 
-            Console.WriteLine("장착할 아이템의 번호를 눌러주세요. (0. 돌아가기)");
+            Console.WriteLine("==========================");
+            Console.WriteLine("=       0. 돌아가기      =");
+            Console.WriteLine($"=  장비번호 입력시 장착  =");
+            Console.WriteLine("==========================");
+
 
         }
         public void EquipCheck(EquipmentA[] equip, int num)
