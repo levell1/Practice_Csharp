@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\whddn\\Desktop\\SpartaCsharp\\ProjectCsharp\\2Week-2\\2Week-2.csproj",
+      "projectUniqueName": "C:\\Users\\whddn\\Documents\\GitHub\\Practice_Csharp\\SpartaCsharp\\ProjectCsharp\\2Week-2\\2Week-2.csproj",
       "projectName": "2Week-2",
-      "projectPath": "C:\\Users\\whddn\\Desktop\\SpartaCsharp\\ProjectCsharp\\2Week-2\\2Week-2.csproj",
+      "projectPath": "C:\\Users\\whddn\\Documents\\GitHub\\Practice_Csharp\\SpartaCsharp\\ProjectCsharp\\2Week-2\\2Week-2.csproj",
       "packagesPath": "C:\\Users\\whddn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\whddn\\Desktop\\SpartaCsharp\\ProjectCsharp\\2Week-2\\obj\\",
+      "outputPath": "C:\\Users\\whddn\\Documents\\GitHub\\Practice_Csharp\\SpartaCsharp\\ProjectCsharp\\2Week-2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\whddn\\AppData\\Roaming\\NuGet\\NuGet.Config",

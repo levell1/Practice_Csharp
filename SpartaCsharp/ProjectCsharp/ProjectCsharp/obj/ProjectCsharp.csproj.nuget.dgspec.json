@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\whddn\\Desktop\\SpartaCsharp\\ProjectCsharp\\ProjectCsharp\\ProjectCsharp.csproj": {}
+    "C:\\Users\\whddn\\Documents\\GitHub\\Practice_Csharp\\SpartaCsharp\\ProjectCsharp\\ProjectCsharp\\ProjectCsharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\whddn\\Desktop\\SpartaCsharp\\ProjectCsharp\\ProjectCsharp\\ProjectCsharp.csproj": {
+    "C:\\Users\\whddn\\Documents\\GitHub\\Practice_Csharp\\SpartaCsharp\\ProjectCsharp\\ProjectCsharp\\ProjectCsharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\whddn\\Desktop\\SpartaCsharp\\ProjectCsharp\\ProjectCsharp\\ProjectCsharp.csproj",
+        "projectUniqueName": "C:\\Users\\whddn\\Documents\\GitHub\\Practice_Csharp\\SpartaCsharp\\ProjectCsharp\\ProjectCsharp\\ProjectCsharp.csproj",
         "projectName": "ProjectCsharp",
-        "projectPath": "C:\\Users\\whddn\\Desktop\\SpartaCsharp\\ProjectCsharp\\ProjectCsharp\\ProjectCsharp.csproj",
+        "projectPath": "C:\\Users\\whddn\\Documents\\GitHub\\Practice_Csharp\\SpartaCsharp\\ProjectCsharp\\ProjectCsharp\\ProjectCsharp.csproj",
         "packagesPath": "C:\\Users\\whddn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\whddn\\Desktop\\SpartaCsharp\\ProjectCsharp\\ProjectCsharp\\obj\\",
+        "outputPath": "C:\\Users\\whddn\\Documents\\GitHub\\Practice_Csharp\\SpartaCsharp\\ProjectCsharp\\ProjectCsharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\whddn\\AppData\\Roaming\\NuGet\\NuGet.Config",
