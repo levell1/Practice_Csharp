@@ -1,280 +1,147 @@
-﻿class Program
+﻿using ConsoleTables;
+using System.Security.Claims;
+using System.Xml.Linq;
+
+namespace TextGame
 {
-    static void Main(string[] args)
+    internal class Program
     {
 
-        // 게임을 시작할 때 벽을 그립니다.
-        DrawWalls();
 
-        // 뱀의 초기 위치와 방향을 설정하고, 그립니다.
-        Point p = new Point(4, 5, '*');
-        Snake snake = new Snake(p, 4, Direction.RIGHT);
-        snake.Draw();
-
-        // 음식의 위치를 무작위로 생성하고, 그립니다.
-        FoodCreator foodCreator = new FoodCreator(80, 20, '$');
-        Point food = foodCreator.CreateFood();
-        food.Draw();
-
-        // 게임 루프: 이 루프는 게임이 끝날 때까지 계속 실행됩니다.
-        while (true)
+        // 2 . 상점의 아이템 중에서 나만의 장비를 구성하는 부분이 포인트입니다.
+        // 3 . 장비는 여러개의 데이터가 함께 있는 만큼 객체나 구조체를 활용하는 편이 효율적 입니다.
+        // (이름, 가격, 효과, 설명 등…)
+        // 4 . 관련된 여러 데이터를 다루는 부분은 배열이 도움이 됩니다.
+        static void Main(string[] args)
         {
-            // 키 입력이 있는 경우에만 방향을 변경합니다.
-            if (Console.KeyAvailable)
-            {
-                var key = Console.ReadKey(true).Key;
 
-                switch (key)
+            ConsoleText _consoleText = new ConsoleText();
+
+            String name;
+            int _actionFirst = 0;
+            int _actionIn = 0;
+            bool _checkNum = true;
+            bool _gamgeEnd = false;
+
+
+
+
+            name = _consoleText.InputName();
+
+            Character _player = new Character(name, "전사", 1, 10, 5, 100, 1500);
+            _consoleText.StartTxt();
+
+
+            while (_gamgeEnd == false)
+            {
+                _actionFirst = 0;
+                _actionIn = 0;
+                _checkNum = true;
+                _consoleText.GoDungeonTxt();
+                _actionFirst = _consoleText.SelectAction();
+                switch (_actionFirst)
                 {
-                    case ConsoleKey.UpArrow:
-                        snake.direction = Direction.UP;
+                    case 1:
+                        while (_checkNum)
+                        {
+                            _player.PlayerStat();
+                            _actionIn = _consoleText.SelectAction();
+                            if (_actionIn == 1)
+                            {
+                                _checkNum = false;
+                            }
+                        }
                         break;
-                    case ConsoleKey.DownArrow:
-                        snake.direction = Direction.DOWN;
+
+                    case 2:
+                        
                         break;
-                    case ConsoleKey.LeftArrow:
-                        snake.direction = Direction.LEFT;
+
+                    case 3:
+                        _gamgeEnd = true;
                         break;
-                    case ConsoleKey.RightArrow:
-                        snake.direction = Direction.RIGHT;
+                    default:
+                        Console.WriteLine("          다시 입력해주세요( 1 ~ 2 )");
                         break;
                 }
-            }
-
-            // 뱀이 음식을 먹었는지 확인합니다.
-            if (snake.Eat(food))
-            {
-              
-                food.Draw();
-
-                // 뱀이 음식을 먹었다면, 새로운 음식을 만들고 그립니다.
-                food = foodCreator.CreateFood();
-                food.Draw();
 
             }
-            else
-            {
-                // 뱀이 음식을 먹지 않았다면, 그냥 이동합니다.
-                snake.Move();
-            }
-
-            Thread.Sleep(200);
-
-            // 벽이나 자신의 몸에 부딪히면 게임을 끝냅니다.
-            if (snake.IsHitTail() || snake.IsHitWall())
-            {
-                break;
-            }
-
+            Console.WriteLine("게임종료");
+            Console.ReadLine();
         }
 
-        WriteGameOver();  // 게임 오버 메시지를 출력합니다.
-        Console.ReadLine();
-    }
 
-    static void WriteGameOver()
-    {
-        int xOffset = 25;
-        int yOffset = 22;
-        Console.SetCursorPosition(xOffset, yOffset++);
-        WriteText("============================", xOffset, yOffset++);
-        WriteText("         GAME OVER", xOffset, yOffset++);
-        WriteText("============================", xOffset, yOffset++);
     }
-
-    static void WriteText(string text, int xOffset, int yOffset)
+    public class ConsoleText
     {
-        Console.SetCursorPosition(xOffset, yOffset);
-        Console.WriteLine(text);
-    }
 
-    // 벽 그리는 메서드
-    static void DrawWalls()
-    {
-        // 상하 벽 그리기
-        for (int i = 0; i < 80; i++)
+        public string Name { get; set; }
+        public int ChooseAction { get; set; }
+        public void StartTxt()
         {
-            Console.SetCursorPosition(i, 0);
-            Console.Write("#");
-            Console.SetCursorPosition(i, 20);
-            Console.Write("#");
+            Console.WriteLine("==================================================");
+            Console.WriteLine($"       {Name}님 마을에 오신것을 환영합니다.       ");
+            Console.WriteLine("==================================================\n\n\n");
         }
-
-        // 좌우 벽 그리기
-        for (int i = 0; i < 20; i++)
+        public String InputName()
         {
-            Console.SetCursorPosition(0, i);
-            Console.Write("#");
-            Console.SetCursorPosition(80, i);
-            Console.Write("#");
+            Console.Write("이름을 입력해 주세요\n이름 : ");
+            Name = Console.ReadLine();
+            Console.Clear();
+            return Name;
         }
-    }
-}
-
-public class Point
-{
-    public int x { get; set; }
-    public int y { get; set; }
-    public char sym { get; set; }
-
-    // Point 클래스 생성자
-    public Point(int _x, int _y, char _sym)
-    {
-        x = _x;
-        y = _y;
-        sym = _sym;
-    }
-
-    // 점을 그리는 메서드
-    public void Draw()
-    {
-        Console.SetCursorPosition(x, y);
-        Console.Write(sym);
-    }
-
-    // 점을 지우는 메서드
-    public void Clear()
-    {
-        sym = ' ';
-        Draw();
-    }
-
-    // 두 점이 같은지 비교하는 메서드
-    public bool IsHit(Point p)
-    {
-        return p.x == x && p.y == y;
-    }
-}
-// 방향을 표현하는 열거형입니다.
-public enum Direction
-{
-    LEFT,
-    RIGHT,
-    UP,
-    DOWN
-}
-
-public class Snake
-{
-    public List<Point> body; // 뱀의 몸통을 리스트로 표현합니다.
-    public Direction direction; // 뱀의 현재 방향을 저장합니다.
-
-    public Snake(Point tail, int length, Direction _direction)
-    {
-        direction = _direction;
-        body = new List<Point>();
-        for (int i = 0; i < length; i++)
+        public void GoDungeonTxt()
         {
-            Point p = new Point(tail.x, tail.y, '*');
-            body.Add(p);
-            tail.x += 1;
-        }
-    }
+            Console.WriteLine("======== 던전에 가기 전 준비를 해주세요. =========");
+            Console.WriteLine("  ┏   ┓             ◆");
+            Console.WriteLine(" |      |          └┼┐ ");
+            Console.WriteLine("|        |         ┌│  ");
+            Console.WriteLine("==================================================  \n\n");
+            Console.WriteLine("1. 상태보기 ");
+            Console.WriteLine("2. 인벤토리 ");
+            Console.WriteLine("=========== ");
 
-    // 뱀을 그리는 메서드입니다.
-    public void Draw()
-    {
-        foreach (Point p in body)
+        }
+
+        public int SelectAction()
         {
-            p.Draw();
+            ChooseAction = int.Parse(Console.ReadLine()); // 숫자 아닐경우 예외처리 하면 좋을 거 같다.if대신 예외처리 배우면 활용
+            Console.Clear();
+            return ChooseAction;
         }
     }
 
-    // 뱀이 음식을 먹었는지 판단하는 메서드입니다.
-    public bool Eat(Point food)
+    public class Character
     {
-        Point head = GetNextPoint();
-        if (head.IsHit(food))
+        public string Name { get; set; }
+        public string Class { get; set; }
+        public int Level { get; set; }
+        public int ATK { get; set; }
+        public int Health { get; set; }
+        public int DEF { get; set; }
+        public int Gold { get; set; }
+
+        public Character(string name, string class1, int level, int atk, int def, int health, int gold) 
         {
-            food.sym = head.sym;
-            body.Add(food);
-            return true;
+            Level = level;
+            Name = name;
+            Class = class1;
+            ATK = atk;
+            DEF = def;
+            Health = health;
+            Gold = gold;
         }
-        else
+
+        public void PlayerStat()
         {
-            return false;
+            var table = new ConsoleTable(" stat ", " point ");
+            table.AddRow($"{Name}", $"({Class})")
+                 .AddRow($"공격력", $"{ATK}")
+                 .AddRow($"방어력", $"{DEF}")
+                 .AddRow($"체  력", $"{Health}")
+                 .AddRow($"골  드", $"{Gold}" + "G");
+            table.Write();
+            Console.WriteLine("1. 나가기");
         }
-    }
-
-    // 뱀이 이동하는 메서드입니다.
-    public void Move()
-    {
-        Point tail = body.First();
-        body.Remove(tail);
-        Point head = GetNextPoint();
-        body.Add(head);
-
-        tail.Clear();
-        head.Draw();
-    }
-
-    // 다음에 이동할 위치를 반환하는 메서드입니다.
-    public Point GetNextPoint()
-    {
-        Point head = body.Last();
-        Point nextPoint = new Point(head.x, head.y, head.sym);
-        switch (direction)
-        {
-            case Direction.LEFT:
-                nextPoint.x -= 2;
-                break;
-            case Direction.RIGHT:
-                nextPoint.x += 2;
-                break;
-            case Direction.UP:
-                nextPoint.y -= 1;
-                break;
-            case Direction.DOWN:
-                nextPoint.y += 1;
-                break;
-        }
-        return nextPoint;
-    }
-
-    // 뱀이 자신의 몸에 부딪혔는지 확인하는 메서드입니다.
-    public bool IsHitTail()
-    {
-        var head = body.Last();
-        for (int i = 0; i < body.Count - 2; i++)
-        {
-            if (head.IsHit(body[i]))
-                return true;
-        }
-        return false;
-    }
-
-    // 뱀이 벽에 부딪혔는지 확인하는 메서드입니다.
-    public bool IsHitWall()
-    {
-        var head = body.Last();
-        if (head.x <= 0 || head.x >= 80 || head.y <= 0 || head.y >= 20)
-            return true;
-        return false;
-    }
-}
-
-public class FoodCreator
-{
-    int mapWidth;
-    int mapHeight;
-    char sym;
-
-    Random random = new Random();
-
-    public FoodCreator(int mapWidth, int mapHeight, char sym)
-    {
-        this.mapWidth = mapWidth;
-        this.mapHeight = mapHeight;
-        this.sym = sym;
-    }
-
-    // 무작위 위치에 음식을 생성하는 메서드입니다.
-    public Point CreateFood()
-    {
-        int x = random.Next(2, mapWidth - 2);
-        // x 좌표를 2단위로 맞추기 위해 짝수로 만듭니다.
-        x = x % 2 == 1 ? x : x + 1;
-        int y = random.Next(2, mapHeight - 2);
-        return new Point(x, y, sym);
     }
 }
