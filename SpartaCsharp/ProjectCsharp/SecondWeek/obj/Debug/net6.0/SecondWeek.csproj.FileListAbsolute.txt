@@ -1,0 +1,14 @@
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\SecondWeek\bin\Debug\net6.0\SecondWeek.exe
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\SecondWeek\bin\Debug\net6.0\SecondWeek.deps.json
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\SecondWeek\bin\Debug\net6.0\SecondWeek.runtimeconfig.json
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\SecondWeek\bin\Debug\net6.0\SecondWeek.dll
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\SecondWeek\bin\Debug\net6.0\SecondWeek.pdb
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\SecondWeek\obj\Debug\net6.0\SecondWeek.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\SecondWeek\obj\Debug\net6.0\SecondWeek.AssemblyInfoInputs.cache
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\SecondWeek\obj\Debug\net6.0\SecondWeek.AssemblyInfo.cs
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\SecondWeek\obj\Debug\net6.0\SecondWeek.csproj.CoreCompileInputs.cache
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\SecondWeek\obj\Debug\net6.0\SecondWeek.dll
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\SecondWeek\obj\Debug\net6.0\refint\SecondWeek.dll
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\SecondWeek\obj\Debug\net6.0\SecondWeek.pdb
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\SecondWeek\obj\Debug\net6.0\SecondWeek.genruntimeconfig.cache
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\SecondWeek\obj\Debug\net6.0\ref\SecondWeek.dll

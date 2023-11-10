@@ -1,0 +1,14 @@
+C:\Users\whddn\Desktop\SpartaCsharp\FirstProgram\Operator\bin\Debug\net6.0\Operator.exe
+C:\Users\whddn\Desktop\SpartaCsharp\FirstProgram\Operator\bin\Debug\net6.0\Operator.deps.json
+C:\Users\whddn\Desktop\SpartaCsharp\FirstProgram\Operator\bin\Debug\net6.0\Operator.runtimeconfig.json
+C:\Users\whddn\Desktop\SpartaCsharp\FirstProgram\Operator\bin\Debug\net6.0\Operator.dll
+C:\Users\whddn\Desktop\SpartaCsharp\FirstProgram\Operator\bin\Debug\net6.0\Operator.pdb
+C:\Users\whddn\Desktop\SpartaCsharp\FirstProgram\Operator\obj\Debug\net6.0\Operator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\whddn\Desktop\SpartaCsharp\FirstProgram\Operator\obj\Debug\net6.0\Operator.AssemblyInfoInputs.cache
+C:\Users\whddn\Desktop\SpartaCsharp\FirstProgram\Operator\obj\Debug\net6.0\Operator.AssemblyInfo.cs
+C:\Users\whddn\Desktop\SpartaCsharp\FirstProgram\Operator\obj\Debug\net6.0\Operator.csproj.CoreCompileInputs.cache
+C:\Users\whddn\Desktop\SpartaCsharp\FirstProgram\Operator\obj\Debug\net6.0\Operator.dll
+C:\Users\whddn\Desktop\SpartaCsharp\FirstProgram\Operator\obj\Debug\net6.0\refint\Operator.dll
+C:\Users\whddn\Desktop\SpartaCsharp\FirstProgram\Operator\obj\Debug\net6.0\Operator.pdb
+C:\Users\whddn\Desktop\SpartaCsharp\FirstProgram\Operator\obj\Debug\net6.0\Operator.genruntimeconfig.cache
+C:\Users\whddn\Desktop\SpartaCsharp\FirstProgram\Operator\obj\Debug\net6.0\ref\Operator.dll

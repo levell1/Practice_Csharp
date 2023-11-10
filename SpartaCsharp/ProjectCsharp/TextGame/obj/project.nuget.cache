@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+BHMVkO6fs9naig0vg/kI/TP8hCWIF1lwEZUjulK2OI6l/jCNLz9y5tKunz033RdFAeXKlhEsENqlEDsdCzC7Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\whddn\\Desktop\\SpartaCsharp\\ProjectCsharp\\TextGame\\TextGame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\whddn\\.nuget\\packages\\consoletables\\2.6.1\\consoletables.2.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}

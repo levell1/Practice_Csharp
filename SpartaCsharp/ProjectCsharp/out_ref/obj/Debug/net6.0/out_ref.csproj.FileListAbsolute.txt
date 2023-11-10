@@ -1,0 +1,14 @@
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\out_ref\bin\Debug\net6.0\out_ref.exe
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\out_ref\bin\Debug\net6.0\out_ref.deps.json
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\out_ref\bin\Debug\net6.0\out_ref.runtimeconfig.json
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\out_ref\bin\Debug\net6.0\out_ref.dll
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\out_ref\bin\Debug\net6.0\out_ref.pdb
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\out_ref\obj\Debug\net6.0\out_ref.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\out_ref\obj\Debug\net6.0\out_ref.AssemblyInfoInputs.cache
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\out_ref\obj\Debug\net6.0\out_ref.AssemblyInfo.cs
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\out_ref\obj\Debug\net6.0\out_ref.csproj.CoreCompileInputs.cache
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\out_ref\obj\Debug\net6.0\out_ref.dll
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\out_ref\obj\Debug\net6.0\refint\out_ref.dll
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\out_ref\obj\Debug\net6.0\out_ref.pdb
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\out_ref\obj\Debug\net6.0\out_ref.genruntimeconfig.cache
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\out_ref\obj\Debug\net6.0\ref\out_ref.dll

@@ -1,0 +1,17 @@
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\bin\Debug\net6.0\TextGame.exe
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\bin\Debug\net6.0\TextGame.deps.json
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\bin\Debug\net6.0\TextGame.runtimeconfig.json
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\bin\Debug\net6.0\TextGame.dll
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\bin\Debug\net6.0\TextGame.pdb
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\obj\Debug\net6.0\TextGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\obj\Debug\net6.0\TextGame.AssemblyInfoInputs.cache
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\obj\Debug\net6.0\TextGame.AssemblyInfo.cs
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\obj\Debug\net6.0\TextGame.csproj.CoreCompileInputs.cache
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\obj\Debug\net6.0\TextGame.dll
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\obj\Debug\net6.0\refint\TextGame.dll
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\obj\Debug\net6.0\TextGame.pdb
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\obj\Debug\net6.0\TextGame.genruntimeconfig.cache
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\obj\Debug\net6.0\ref\TextGame.dll
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\bin\Debug\net6.0\ConsoleTables.dll
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\obj\Debug\net6.0\TextGame.csproj.AssemblyReference.cache
+C:\Users\whddn\Desktop\SpartaCsharp\ProjectCsharp\TextGame\obj\Debug\net6.0\TextGame.csproj.CopyComplete
