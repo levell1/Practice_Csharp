@@ -1,4 +1,38 @@
-﻿using ConsoleTables;
+
+
+<BR><BR>
+
+<center><H1> 개인과제 Text Game  </H1></center>
+
+
+
+<br><br>
+
+# TextGame
+(C# - Console App)  
+마을에서 시작해 상태, 인벤, 상점 을 통하여 정비하는기능이 있는 개인과제 입니다.
+
+<br>
+
+
+
+# 2. 코드, 기능
+
+> **기능** 
+> - 캐릭터 정보창( 장비스탯반영 )  스탯,장비,소지금 보여주기
+> - 인벤토리, 장착관리 
+> - 장비 구매 -> 인벤토리에 반영
+> - 구매한 장비 장착 (진행중)
+
+<br>
+
+<details>
+<summary>전체 코드</summary>
+
+<div class="notice--primary" markdown="1"> 
+
+```c# 
+using ConsoleTables;
 using System;
 using System.Security.Claims;
 using System.Xml.Linq;
@@ -7,6 +41,7 @@ namespace TextGame
 {
     internal class Program
     {
+        
         // 2 . 상점의 아이템 중에서 나만의 장비를 구성하는 부분이 포인트입니다.
         // 3 . 장비는 여러개의 데이터가 함께 있는 만큼 객체나 구조체를 활용하는 편이 효율적 입니다.
         // (이름, 가격, 효과, 설명 등…)
@@ -294,16 +329,17 @@ namespace TextGame
             Console.WriteLine("=============");
         }
     }
-    /*public class Weapons
-    {
-        public string Name { get; set; }
-        public int ATK { get; set; }
-        public Weapons(string name, int aTK)
-        {
-            Name = name;
-            ATK = aTK;
-        }
-    }*/
+   /*public class Weapons
+   {
+      public string Name { get; set; }
+      public int ATK { get; set; }
+      public Weapons(string name, int aTK)
+      {
+         Name = name;
+         ATK = aTK;
+      }
+   }*/
+
 
 
     public class EquipmentA
@@ -482,6 +518,7 @@ namespace TextGame
             Console.WriteLine($"=  장비번호 입력시 구매  =");
             Console.WriteLine("==========================");
 
+
         }
         public void PurchaseEquipment(EquipmentA[] store,Character player, int num)
         {
@@ -520,3 +557,60 @@ namespace TextGame
 
 }
 
+
+```
+</div>
+
+</details>
+
+<br>
+
+> **클래스**
+> - **`class ConsoleText`**  
+입,출력부분으로 이루어진 메서드들이 포함된 클래스입니다.  
+> - **`class Character`**  
+생성자로 플레이어 초기값을 정하고, 플레이어 스탯을 보여주는 메서드로 구성되어 > - 있습니다.  
+> - **`class EquipmentA`**  
+장비의 정보를 담는 클래스입니다.  
+> - **`class Inventory`**   
+가지고있는 장비를 보여주고, 장착, 스탯에 반영을 도와주는 클래스입니다.  
+> - **`class Store`**   
+상점의 장비를 보여주고, 구매를 진행하는 메서드로 구성된 클래스입니다.
+
+<br>
+
+> **Main**  
+변수, 캐릭터초기값 지정, 인벤,상점의(`_storeSet`, `_euipSet`) 장비들 배열(`equipment`, `storeEquipment`)에 저장, -> 번호를 입력하여 진행, 
+잡담방에 올려주신 nuget(Console Table) 사용
+
+<br>
+
+
+# 3. 게임화면
+
+**시작화면**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/78b9629b-93f0-4297-a7ee-28e6250cc86e)
+
+**상태창**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/dc77df57-4a62-4861-a440-ba08e1088d68)
+
+**장비장착**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/960ab939-fa5a-4957-aaac-ac48464bdbe2)
+
+**상점**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/aa77cb7d-e154-45bd-ae8a-ebc8e4ba3f24)  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/b534aea9-30a3-4bf7-8bfa-eea409496d35)
+
+<br>
+
+
+# 4. 느낀점
+게임 진행부분의 while, if의 조건을 단축할 수 없을까 고민했고, list, 상속, 클래스, 매서드 등 잘 사용하지 못하여 아쉬웠고, 사용하면서 조금 더 배운 과제였습니다.  
+생각을 코드로 적고 코드들이 길어지며 클래스, 메서드, 변수명의 중요성을 꺠닫고, 중간에 수정 시 힘듦이 있어 처음부터 추가할 기능을 정하고, 코드의 구조를 짜고 시작하면 좋겠다고 느꼈습니다.
+
+<br><br><br><br><br><br>
+- - - 
+
+[C#] TEXT GAME
+
+<br>
