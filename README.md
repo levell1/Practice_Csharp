@@ -14,6 +14,24 @@
 
 <br>
 
+# 1. 게임화면
+
+**시작화면**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/78b9629b-93f0-4297-a7ee-28e6250cc86e)
+
+**상태창**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/dc77df57-4a62-4861-a440-ba08e1088d68)
+
+**장비장착**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/960ab939-fa5a-4957-aaac-ac48464bdbe2)
+
+**상점**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/aa77cb7d-e154-45bd-ae8a-ebc8e4ba3f24)  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/b534aea9-30a3-4bf7-8bfa-eea409496d35)
+
+<br>
+
+
 
 # 2. 코드, 기능
 
@@ -936,26 +954,7 @@ public class Store
 
 <br>
 
-
-# 3. 게임화면
-
-**시작화면**  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/78b9629b-93f0-4297-a7ee-28e6250cc86e)
-
-**상태창**  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/dc77df57-4a62-4861-a440-ba08e1088d68)
-
-**장비장착**  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/960ab939-fa5a-4957-aaac-ac48464bdbe2)
-
-**상점**  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/aa77cb7d-e154-45bd-ae8a-ebc8e4ba3f24)  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/b534aea9-30a3-4bf7-8bfa-eea409496d35)
-
-<br>
-
-
-# 4. 느낀점
+# 3. 느낀점
 게임 진행부분의 while, if의 조건을 단축할 수 없을까 고민했고, list, 상속, 클래스, 매서드 등 잘 사용하지 못하여 아쉬웠고, 사용하면서 조금 더 배운 과제였습니다.  
 생각을 코드로 적고 코드들이 길어지며 클래스, 메서드, 변수명의 중요성을 꺠닫고, 중간에 수정 시 힘듦이 있어 처음부터 추가할 기능을 정하고, 코드의 구조를 짜고 시작하면 좋겠다고 느꼈습니다.
 
