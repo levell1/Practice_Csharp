@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snake", "Snake\Snake.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackJack1", "BlackJack1\BlackJack1.csproj", "{BFCFF4E5-2C7A-4BFD-A5F1-F7564D67985E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextGame", "TextGame\TextGame.csproj", "{577D6FF9-8845-4106-8D76-1D6141773A66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextGame", "TextGame\TextGame.csproj", "{577D6FF9-8845-4106-8D76-1D6141773A66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "week4", "week4\week4.csproj", "{2730BE17-6F3D-4DEC-861B-89189F9F2F7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{577D6FF9-8845-4106-8D76-1D6141773A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{577D6FF9-8845-4106-8D76-1D6141773A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{577D6FF9-8845-4106-8D76-1D6141773A66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2730BE17-6F3D-4DEC-861B-89189F9F2F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2730BE17-6F3D-4DEC-861B-89189F9F2F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2730BE17-6F3D-4DEC-861B-89189F9F2F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2730BE17-6F3D-4DEC-861B-89189F9F2F7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
