@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace TextGame
 {
-    public class EquipMentA
+    interface IEquipMent
+    {
+        public string Name { get; set; }
+        public int ATK { get; set; }
+        public int Health { get; set; }
+        public int DEF { get; set; }
+
+        public int Gold { get; set; }
+        public bool CheckEquip { get; set; }
+        public bool CheckHave { get; set; }
+    }
+    public class EquipMentA : IEquipMent
     {
         public string Name { get; set; }
         public int ATK { get; set; }
