@@ -3,6 +3,7 @@ using System;
 using System.Security.Claims;
 using System.Xml.Linq;
 using TextGame.UsingTest;   // 폴더 using으로 사용해보기
+
 namespace TextGame
 {
     internal class Program
@@ -54,10 +55,10 @@ namespace TextGame
                 _actionIn = 0;
                 _checkNum = true;
                 _consoleText.GoDungeonTxt();
-                enumValue = _consoleText.SelectAction();
-                switch (enumValue)
+                _actionFirst = _consoleText.SelectAction();
+                switch (_actionFirst)
                 {
-                    case firstView.View:
+                    case 1:
                         while (_checkNum)
                         {
                             _callStat();

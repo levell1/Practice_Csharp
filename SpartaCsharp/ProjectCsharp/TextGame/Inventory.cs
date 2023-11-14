@@ -81,7 +81,7 @@ namespace TextGame
                     {
                         Ename = Ename.Substring(0, Ename.Length - 4);
                     }
-                    table.AddRow($" {i + equip.Length} ", $" {Ename} ", $"{StoreEquip[i].ATK}", $"{StoreEquip[i].Health}", $"{StoreEquip[i].DEF}");
+                    table.AddRow($" {i + equip.Length+1} ", $" {Ename} ", $"{StoreEquip[i].ATK}", $"{StoreEquip[i].Health}", $"{StoreEquip[i].DEF}");
                 }
             }
             table.Write();
