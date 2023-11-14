@@ -57,6 +57,7 @@ namespace TextGame
                 _checkNum = true;
                 _consoleText.GoDungeonTxt();
                 firstView = _consoleText.SelectAction();
+                enumValue = (FirstView)firstView;
                 switch (enumValue)
                 {
                     case FirstView.ViewStat:

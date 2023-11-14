@@ -1013,7 +1013,8 @@ Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하�
 > **4.&nbsp;switch enum 사용하기**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/39da54db-0cf6-4d83-bfbf-ca9cc827a6f5) &nbsp;&nbsp;
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/9cfb272a-78c5-41dc-ab32-da4ef4cba574)  
-![image](https://github.com/levell1/levell1.github.io/assets/96651722/f2564269-2671-4c22-89df-5acdcfbb6e6d)
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/83038e83-14c9-4c7b-be49-abbf46343c25)
+
 
 <BR>
 
