@@ -21,8 +21,8 @@ namespace TextGame
         }
         static void Main(string[] args)
         {
-            int firstView = (int)FirstView.ViewStat;
-            FirstView enumValue = (FirstView)firstView;
+            
+
             ConsoleText _consoleText = new ConsoleText();
             String name;
             int _actionFirst = 0;
@@ -47,18 +47,19 @@ namespace TextGame
             //List<EquipmentA> equipment1 = new List<EquipmentA>(equipment);
             //EquipmentA a = new EquipmentA("1", 1, 1, 1,1, true);
             //equipment1.Add(a);
-            
-            
+            int firstView = (int)FirstView.ViewStat;
+            FirstView enumValue = (FirstView)firstView;
+
             while (_gamgeEnd == false)
             {
                 _actionFirst = 0;
                 _actionIn = 0;
                 _checkNum = true;
                 _consoleText.GoDungeonTxt();
-                _actionFirst = _consoleText.SelectAction();
-                switch (_actionFirst)
+                firstView = _consoleText.SelectAction();
+                switch (enumValue)
                 {
-                    case 1:
+                    case FirstView.ViewStat:
                         while (_checkNum)
                         {
                             _callStat();
@@ -69,15 +70,15 @@ namespace TextGame
                         }
                         break;
 
-                    case 2:
+                    case FirstView.ViewInven:
                         _selectEquip();
                         break;
 
-                    case 3:
+                    case FirstView.ViewStore:
                         _selectStoreEquip();
                         break;
 
-                    case 4:
+                    case FirstView.ViewEnd:
                         _gamgeEnd = true;
                         break;
                     default:

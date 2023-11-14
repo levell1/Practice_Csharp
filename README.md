@@ -992,7 +992,7 @@ Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하�
 &nbsp;&nbsp; [o] **1.&nbsp;Class 파일 나누기**  
 &nbsp;&nbsp; [o] **2.&nbsp;EquipMent 경우 상속 재설계**  
 &nbsp;&nbsp; [o] **3.&nbsp;깃 커밋 설명 잘 적기**  
-&nbsp;&nbsp; [x] **4.&nbsp;switch enum 사용하기(다음 프로젝트 때 반영)**   
+&nbsp;&nbsp; [o] **4.&nbsp;switch enum 사용하기**   
 
 
 
@@ -1010,6 +1010,11 @@ Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하�
 > **3.&nbsp;깃 커밋 설명 잘 적기**  
 ![image](https://github.com/levell1/levell1.github.io/assets/96651722/0668936c-cbfb-4554-bed3-3cd5cfd8f1f9)  
 
+> **4.&nbsp;switch enum 사용하기**  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/39da54db-0cf6-4d83-bfbf-ca9cc827a6f5) &nbsp;&nbsp;
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/9cfb272a-78c5-41dc-ab32-da4ef4cba574)  
+![image](https://github.com/levell1/levell1.github.io/assets/96651722/f2564269-2671-4c22-89df-5acdcfbb6e6d)
+
 <BR>
 
 > **느낀점**  
@@ -1017,7 +1022,7 @@ Readme 작성은 해당 프로젝트를 전반적으로 파악하기 양호하�
 (저희조 팀장님이 이해하기 쉽게 설명해 주셨습니다. 감사합니다.🙇)  
 **<u>상속</u>** 의 경우 코드 기획? 설계부분이 미숙해 아직 완벽하게 이해하지 못하고 사용해 보았습니다, 많이 사용해 보며 확실하게 알 수 있게 하는 게 목표입니다.  
 **<u>깃 커밋</u>** 설명을 적고 협업 시 원활한 소통이 가능할 거 같다고 느꼈습니다.
-enum은 현제 코드에 적용하려니 저의 생각으로는 뭔가 바꿀 게 많은 거 같아서 다음 프로젝트부터 Enum, Switch를 사용해 볼 예정입니다.  
+**<u>switch enum 사용</u>** 후 가독성이 좋아진 거 같다, case 1~4보단 무슨 기능을 하는지 보기 좋았다.   
 
 과제에 대한 피드백을 받고 잘 하고있는지, 부족한부분, 수정하면 좋은부분을 알게되어 좋았습니다.  
 튜터님 감사합니다.  
