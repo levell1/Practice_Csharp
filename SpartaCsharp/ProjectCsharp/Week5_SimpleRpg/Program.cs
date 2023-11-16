@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using Week5_SimpleRpg.Character;
 using Week5_SimpleRpg.Item;
 
@@ -31,22 +32,27 @@ namespace Week5_SimpleRpg
 
         class Stage {
 
-            public void Start(Warrior warrior, Monster monster, List<IItem> item) {
-                Console.WriteLine($"{warrior.Name}가 {monster.Name}과 마주쳤습니다. 전투를 준비해 주세요.(1.공격하기, 2.체력포션, 3.힘영약");
+            public void Start(Warrior player, ICharacter monster, List<IItem> item) {
 
-                
-            }
-
-            public void select() {
-
-                int action = int.Parse(Console.ReadLine());
-                SelectAction Doaction = (SelectAction)action;  // 정수를 열거형으로 변환
-                switch (Doaction)
+                Console.WriteLine($"{player.Name}가 {monster.Name}과 마주쳤습니다. ");
+                while (!player.IsDead && !monster.IsDead) // 플레이어나 몬스터가 죽을 때까지 반복
                 {
+                    // 플레이어의 턴
+                    Console.WriteLine($"{player.Name}의 턴!");
+                    monster.TakeDamage(player.Attack);
+                    Console.WriteLine();
+                    Thread.Sleep(1000);  // 턴 사이에 1초 대기
 
+                    if (monster.IsDead) break;  // 몬스터가 죽었다면 턴 종료
+
+                    // 몬스터의 턴
+                    Console.WriteLine($"{monster.Name}의 턴!");
+                    player.TakeDamage(monster.Attack);
+                    Console.WriteLine();
+                    Thread.Sleep(1000);  // 턴 사이에 1초 대기
                 }
-
             }
+
         }
 
         static void Main(string[] args)

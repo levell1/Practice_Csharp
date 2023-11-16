@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackJack1", "BlackJack1\Bl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextGame", "TextGame\TextGame.csproj", "{577D6FF9-8845-4106-8D76-1D6141773A66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "week4", "week4\week4.csproj", "{2730BE17-6F3D-4DEC-861B-89189F9F2F7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "week4", "week4\week4.csproj", "{2730BE17-6F3D-4DEC-861B-89189F9F2F7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week5_SimpleRpg", "Week5_SimpleRpg\Week5_SimpleRpg.csproj", "{03552036-F3D2-43AC-A0AB-A9BB77677010}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{2730BE17-6F3D-4DEC-861B-89189F9F2F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2730BE17-6F3D-4DEC-861B-89189F9F2F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2730BE17-6F3D-4DEC-861B-89189F9F2F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03552036-F3D2-43AC-A0AB-A9BB77677010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03552036-F3D2-43AC-A0AB-A9BB77677010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03552036-F3D2-43AC-A0AB-A9BB77677010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03552036-F3D2-43AC-A0AB-A9BB77677010}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

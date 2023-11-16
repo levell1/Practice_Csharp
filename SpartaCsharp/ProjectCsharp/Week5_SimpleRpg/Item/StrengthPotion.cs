@@ -22,5 +22,4 @@ namespace Week5_SimpleRpg.Item
 
         }
     }
-    }
 }

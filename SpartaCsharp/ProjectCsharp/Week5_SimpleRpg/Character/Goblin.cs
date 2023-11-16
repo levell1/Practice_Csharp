@@ -16,13 +16,10 @@ namespace Week5_SimpleRpg.Character
         public Goblin( string name)
         {
             Name = name;
-            Health = 1000; // 초기 체력
-            Attack = 70; // 초기 공격력
+            Health = 100; // 초기 체력
+            Attack = 30; // 초기 공격력
             IsDead = false;
         }
-        public void TakeDamage(int damage)
-        {
 
-        }
     }
 }

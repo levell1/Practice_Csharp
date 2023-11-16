@@ -20,9 +20,5 @@ namespace Week5_SimpleRpg.Character
             Attack = 70; // 초기 공격력
             IsDead = false;
         }
-        public void TakeDamage(int damage)
-        {
-
-        }
     }
 }
