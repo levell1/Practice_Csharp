@@ -54,6 +54,8 @@ namespace TextGame
                  .AddRow(" 소지금 ", " 골드(G) ", " ", " ")
                  .AddRow("   ", $" {Gold} G ", "", "");
             table.Write();
+
+
             Console.WriteLine("=============");
             Console.WriteLine("= 1. 나가기 =");
             Console.WriteLine("=============");
